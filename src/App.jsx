@@ -13,17 +13,10 @@ function App() {
     <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />}></Route>
-          <Route path="dashboard" element={<Dashboard />}></Route>
+          <Route index element={<Dashboard />}></Route>
           <Route path="customers" element={<Customers />}></Route>
-          <Route
-            path="dashboard/add-employee"
-            element={<AddEmployee />}
-          ></Route>
-          <Route
-            path="dashboard/add-customers"
-            element={<AddCustomers />}
-          ></Route>
+          <Route path="add-employee" element={<AddEmployee />}></Route>
+          <Route path="add-customers" element={<AddCustomers />}></Route>
         </Route>
       </Routes>
     </HashRouter>

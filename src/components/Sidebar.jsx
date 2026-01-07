@@ -7,7 +7,7 @@ export default function Sidebar() {
       <h3>Admin</h3>
       <p>Online</p>
       <nav className="sidebar-items">
-        <NavLink to="dashboard">Dashboard</NavLink>
+        <NavLink to="/">Dashboard</NavLink>
         <NavLink to="customers">Customers</NavLink>
       </nav>
     </div>

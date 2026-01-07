@@ -34,7 +34,7 @@
   background-color: #fff;
   color: #000;
   padding: 80px;
-  border: 1px solid black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 .sidebar-items{
   display: flex;

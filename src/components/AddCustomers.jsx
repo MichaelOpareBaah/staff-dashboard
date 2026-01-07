@@ -26,20 +26,31 @@ export default function AddCustomers() {
           </div>
           <div className="flex-col">
             <label>Gender *</label>
-            <select name="color" id="color" required className="input">
+            <select name="gender" id="gender" required className="input">
               <option value="">-- Select an option --</option>
               <option value="male">Male</option>
               <option value="female">Female</option>
             </select>
           </div>
         </div>
-        <div className="flex-col">
-          <label>Specifications *</label>
-          <input
-            type="text"
-            placeholder="Describe what the customer wants"
-            className="input"
-          />
+        <div className="flex-row">
+          <div className="flex-col">
+            <label>Specifications *</label>
+            <input
+              type="text"
+              placeholder="Describe what the customer wants"
+              className="input"
+            />
+          </div>
+          <div className="flex-col">
+            <label>Assign To *</label>
+            <select name="assignTo" id="assignTo" required className="input">
+              <option value="">-- Select an option --</option>
+              <option value="female">Manager</option>
+              <option value="male">Designer</option>
+              <option value="female">Sales</option>
+            </select>
+          </div>
         </div>
       </form>
     </div>

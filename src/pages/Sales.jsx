@@ -1,16 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router";
 
-export default function Dashboard() {
+export default function Sales() {
   return (
     <div>
       <div className="wrapper">
         <div className="card">
-          <h4>Total Sales</h4>
+          <h4>Total Clients</h4>
           <p>10</p>
         </div>
         <div className="card">
-          <h4>Total Orders</h4>
+          <h4>Pending Orders</h4>
           <p>10</p>
         </div>
         <div className="card">
@@ -19,13 +19,15 @@ export default function Dashboard() {
         </div>
       </div>
       <div className="btn-wrapper">
-        <NavLink to="add-employee" className="btn">
-          Check Today's Sales
-        </NavLink>
         <NavLink to="add-customers" className="btn">
-          Check Today's Orders
+          Add New Client
         </NavLink>
-        <NavLink className="btn">Check Monthly Sales</NavLink>
+        <NavLink to="#" className="btn">
+          Clients Data
+        </NavLink>
+        <NavLink className="btn" to="track">
+          Track Order Status
+        </NavLink>
       </div>
       <div>
         <h4>Today's Customers</h4>
